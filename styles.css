@@ -1,0 +1,91 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif; /* Stel het lettertype in */
+    margin: 0; /* Verwijder de standaard marge */
+    padding: 0; /* Verwijder de standaard padding */
+    height: 100vh; /* Zorgt ervoor dat de body de volledige hoogte van het scherm heeft */
+    background: url('osiris.png') no-repeat center center fixed; /* Stel de achtergrondafbeelding in */
+    background-size: cover; /* Zorg ervoor dat de afbeelding het hele scherm bedekt */
+    color: #333; /* Stel de tekstkleur in */
+}
+
+header {
+    display: flex; /* Gebruik flexbox voor de header */
+    justify-content: space-between; /* Verdeelt de inhoud met ruimte tussen */
+    align-items: center; /* Zorg ervoor dat de items verticaal gecentreerd zijn */
+    padding: 10px 20px; /* Voeg padding toe aan de header */
+    background-color: #fff; /* Stel de achtergrondkleur in voor de header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Voeg een subtiele schaduw toe aan de header */
+}
+
+.header-logo {
+    display: flex; /* Gebruik flexbox voor het logo */
+    align-items: center; /* Zorg ervoor dat het logo verticaal gecentreerd is */
+}
+
+.header-logo img {
+    height: 40px; /* Stel de hoogte van het logo in */
+    margin-right: 10px; /* Voeg een marge toe aan de rechterkant van het logo */
+}
+
+.menu-button {
+    font-size: 24px; /* Stel de lettergrootte in voor de menu-knop */
+    background: none; /* Verwijder de achtergrond van de knop */
+    border: none; /* Verwijder de rand van de knop */
+    cursor: pointer; /* Verander de cursor naar een handje bij hover */
+}
+
+main {
+    display: flex; /* Gebruik flexbox voor de main sectie */
+    justify-content: center; /* Centreer de inhoud horizontaal */
+    align-items: center; /* Centreer de inhoud verticaal */
+    height: 100vh; /* Zorg ervoor dat de main sectie de volledige hoogte van het scherm heeft */
+}
+
+.upload-section {
+    text-align: center; /* Centreer de tekst in de upload-sectie */
+    width: 90%; /* Stel de breedte in op 90% van het scherm */
+    max-width: 400px; /* Stel een maximum breedte in van 400px */
+    background-color: #D9D9D9; /* Stel de achtergrondkleur in voor de upload-sectie */
+    padding: 20px; /* Voeg padding toe aan de upload-sectie */
+    border-radius: 8px; /* Maak de hoeken van de sectie afgerond */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Voeg een schaduw toe voor diepte */
+}
+
+.upload-box {
+    background-color: #D9D9D9; /* Stel de achtergrondkleur in voor de upload-box */
+    padding: 20px; /* Voeg padding toe aan de upload-box */
+    border-radius: 8px; /* Maak de hoeken afgerond voor de upload-box */
+    border: 1px solid #ddd; /* Voeg een dunne rand toe aan de upload-box */
+}
+
+.upload-box h3 {
+    margin-top: 0; /* Verwijder de marge boven de heading */
+    font-size: 18px; /* Stel de lettergrootte in voor de heading */
+}
+
+.upload-box p {
+    color: #D9D9D9; /* Stel de tekstkleur in voor de paragraaf */
+    font-size: 14px; /* Stel de lettergrootte in voor de paragraaf */
+    margin-bottom: 20px; /* Voeg marge toe aan de onderkant van de paragraaf */
+}
+
+.upload-label {
+    display: inline-block; /* Zorg ervoor dat de upload-label als inline-block wordt weergegeven */
+    padding: 10px 20px; /* Voeg padding toe aan de upload-label */
+    background-color: #70c1b3; /* Stel de achtergrondkleur in voor de upload-label */
+    color: #D9D9D9; /* Stel de tekstkleur in voor de upload-label */
+    border-radius: 4px; /* Maak de hoeken van de upload-label afgerond */
+    cursor: pointer; /* Verander de cursor naar een handje bij hover */
+    text-decoration: none; /* Verwijder onderstreping van de tekst */
+    font-size: 14px; /* Stel de lettergrootte in voor de upload-label */
+}
+
+.upload-label:hover {
+    background-color: #5da99b; /* Verander de achtergrondkleur bij hover */
+}
+
+.header-logo img {
+    height: 60px; /* Stel de hoogte van het logo in bij een herhaalde definitie */
+    margin-right: 10px; /* Voeg een marge toe aan de rechterkant van het logo */
+}

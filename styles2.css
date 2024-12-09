@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Stel het lettertype in */
+    margin: 0; /* Verwijder de standaard marge */
+    padding: 0; /* Verwijder de standaard padding */
+    background: url('osiris.png') no-repeat center center fixed; /* Stel de achtergrondafbeelding in */
+    background-size: cover; /* Zorg ervoor dat de afbeelding het hele scherm bedekt */
+    color: #333; /* Stel de tekstkleur in */
+}
+
+header {
+    display: flex; /* Gebruik flexbox voor de header */
+    justify-content: space-between; /* Verdeelt de inhoud met ruimte tussen */
+    align-items: center; /* Zorg ervoor dat de items verticaal gecentreerd zijn */
+    padding: 10px 20px; /* Voeg padding toe aan de header */
+    background-color: #fff; /* Stel de achtergrondkleur in voor de header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Voeg een subtiele schaduw toe aan de header */
+}
+
+.header-logo img {
+    height: 60px; /* Stel de hoogte van het logo in */
+    margin-right: 10px; /* Voeg een marge toe aan de rechterkant van het logo */
+}
+
+.menu-button {
+    font-size: 24px; /* Stel de lettergrootte in voor de menu-knop */
+    background: none; /* Verwijder de achtergrond van de knop */
+    border: none; /* Verwijder de rand van de knop */
+    cursor: pointer; /* Verander de cursor naar een handje bij hover */
+}
+
+main {
+    display: flex; /* Gebruik flexbox voor de main sectie */
+    justify-content: space-around; /* Verspreid de secties horizontaal met ruimte ertussen */
+    padding: 20px; /* Voeg padding toe aan de main sectie */
+    flex-wrap: wrap; /* Zorg ervoor dat de items op meerdere regels kunnen worden geplaatst als ze niet passen */
+}
+
+.upload-box {
+    background-color: #f4f4f4; /* Stel de achtergrondkleur in voor de upload-box */
+    padding: 20px; /* Voeg padding toe aan de upload-box */
+    border-radius: 8px; /* Maak de hoeken van de upload-box afgerond */
+    border: 1px solid #ddd; /* Voeg een dunne rand toe aan de upload-box */
+    width: 90%; /* Zorg ervoor dat de upload-box 90% van de breedte van het scherm inneemt */
+    max-width: 400px; /* Stel een maximum breedte in van 400px */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Voeg een schaduw toe voor diepte */
+}
+
+.upload-box label {
+    display: block; /* Zorg ervoor dat de labels als blokken worden weergegeven */
+    font-weight: bold; /* Maak de tekst van de labels vetgedrukt */
+    margin-bottom: 5px; /* Voeg marge toe onder de labels */
+}
+
+.upload-box input[type="text"],
+.upload-box textarea,
+.upload-box input[type="number"] {
+    width: 100%; /* Zorg ervoor dat de invoervelden de volledige breedte gebruiken */
+    padding: 10px; /* Voeg padding toe aan de invoervelden */
+    margin-bottom: 20px; /* Voeg marge toe onder de invoervelden */
+    border: 1px solid #ddd; /* Voeg een rand toe aan de invoervelden */
+    border-radius: 4px; /* Maak de hoeken van de invoervelden afgerond */
+    font-size: 14px; /* Stel de lettergrootte in voor de invoervelden */
+    box-sizing: border-box; /* Zorg ervoor dat padding en margin in de breedte worden meegerekend */
+}
+
+.upload-box textarea {
+    resize: none; /* Verhindert dat het tekstvak wordt vergroot of verkleind */
+    height: 80px; /* Stel een hoogte in voor het tekstvak */
+}
+
+.download-button {
+    display: inline-block; /* Zorg ervoor dat de knop als inline-block wordt weergegeven */
+    padding: 10px 20px; /* Voeg padding toe aan de knop */
+    background-color: #70c1b3; /* Stel de achtergrondkleur in voor de knop */
+    color: #fff; /* Stel de tekstkleur in voor de knop */
+    border-radius: 4px; /* Maak de hoeken van de knop afgerond */
+    text-align: center; /* Centreer de tekst in de knop */
+    text-decoration: none; /* Verwijder onderstreping van de tekst */
+    font-size: 14px; /* Stel de lettergrootte in voor de knop */
+    cursor: pointer; /* Verander de cursor naar een handje bij hover */
+}
+
+.download-button:hover {
+    background-color: #5da99b; /* Verander de achtergrondkleur bij hover */
+}
+
+/* Star Rating System */
+.stars {
+    display: flex; /* Gebruik flexbox voor het sterbeoordelingssysteem */
+    justify-content: space-between; /* Zorg ervoor dat de sterren gelijkmatig verdeeld zijn */
+    width: 120px; /* Stel een vaste breedte in voor de sterbeoordelingsbalk */
+    margin: 10px auto 0; /* Voeg marge toe boven en onder het sterbeoordelingssysteem */
+    font-size: 24px; /* Stel de grootte van de sterren in */
+    color: #ccc; /* Stel de kleur van de sterren in (lichtgrijs) */
+    cursor: pointer; /* Verander de cursor naar een handje bij hover */
+}
+
+.stars .star:hover,
+.stars .star.active {
+    color: #f39c12; /* Verander de kleur van de sterren naar geel bij hover of wanneer ze actief zijn */
+}

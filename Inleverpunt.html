@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8"> <!-- Zet de tekencodering naar UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Zorgt voor een responsief ontwerp -->
+    <title>BPV Opdrachten Inleveren</title> <!-- Titel van de pagina die in de browser wordt getoond -->
+    <link rel="stylesheet" href="styles.css"> <!-- Verbindt de externe CSS-stijl -->
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="aventus.png" alt="Aventus Logo"> <!-- Logo van Aventus -->
+        </div>
+        <nav>
+            <button class="menu-button">☰</button> <!-- Menu-knop (hamburger-menu) -->
+        </nav>
+    </header>
+    <main>
+        <section class="upload-section">
+            <h2>BPV Opdrachten Inleveren</h2> <!-- Hoofdheading van de pagina -->
+            <div class="upload-box">
+                <label for="title-input">Titel</label> <!-- Label voor het titelveld -->
+                <input type="text" id="title-input" placeholder="Titel van je stage / BPV document"> <!-- Tekstinvoerveld voor de titel -->
+                
+                <label for="description-input">Beschrijving</label> <!-- Label voor het beschrijvingsveld -->
+                <textarea id="description-input" placeholder="Beschrijf je stage of BPV document"></textarea> <!-- Tekstveld voor de beschrijving -->
+                
+                <label for="file-upload" class="upload-label"> <!-- Label voor bestandsupload -->
+                    Upload File
+                    <input type="file" id="file-upload" hidden> <!-- Verborgen bestand-uploadknop -->
+                </label>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8"> <!-- Zet de tekencodering naar UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Zorgt voor een responsief ontwerp -->
+    <title>BPV Opdrachten Beoordelen</title> <!-- Titel van de pagina die in de browser wordt getoond -->
+    <link rel="stylesheet" href="styles2.css"> <!-- Verbindt de externe CSS-stijl -->
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="aventus.png" alt="Aventus Logo"> <!-- Logo van Aventus -->
+        </div>
+        <nav>
+            <button class="menu-button">☰</button> <!-- Menu-knop (hamburger-menu) -->
+        </nav>
+    </header>
+    <main>
+        <!-- Download Section -->
+        <section class="download-section">
+            <h2>BPV Opdrachten Beoordelen</h2> <!-- Hoofdheading voor de beoordelingspagina -->
+            <div class="upload-box">
+                <label for="title-input">Titel</label> <!-- Label voor het titelveld -->
+                <input type="text" id="title-input" placeholder="Titel van ingeleverde stage / BPV document" disabled> <!-- Invoer voor de titel (alleen-lezen) -->
+                
+                <label for="description-input">Beschrijving</label> <!-- Label voor het beschrijvingsveld -->
+                <textarea id="description-input" placeholder="Beschrijving van ingeleverde stage / BPV document" disabled></textarea> <!-- Beschrijvingsveld (alleen-lezen) -->
+                
+                <button class="download-button">Download</button> <!-- Download-knop voor het bestand -->
+            </div>
+        </section>
+
+        <!-- Review Section -->
+        <section class="review-section">
+            <div class="upload-box">
+                <label for="reviewer-name">Naam Beoordelaar</label> <!-- Label voor de naam van de beoordelaar -->
+                <input type="text" id="reviewer-name" placeholder="Naam beoordelaar"> <!-- Invoer voor de naam van de beoordelaar -->
+                
+                <label for="feedback-input">Feedback</label> <!-- Label voor het feedbackveld -->
+                <textarea id="feedback-input" placeholder="Feedback"></textarea> <!-- Tekstveld voor feedback -->
+                
+                <label for="score-input">Cijfer (uit 100)</label> <!-- Label voor het cijfer -->
+                <input type="number" id="score-input" placeholder="Cijfer/100" max="100" min="0"> <!-- Invoer voor cijfer (tussen 0 en 100) -->
+
+                <div class="stars"> <!-- Sterbeoordelingssysteem -->
+                    <span class="star" data-value="1">☆</span> <!-- Ster 1 -->
+                    <span class="star" data-value="2">☆</span> <!-- Ster 2 -->
+                    <span class="star" data-value="3">☆</span> <!-- Ster 3 -->
+                    <span class="star" data-value="4">☆</span> <!-- Ster 4 -->
+                    <span class="star" data-value="5">☆</span> <!-- Ster 5 -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script> <!-- Verbindt de externe JavaScript-bestand -->
+</body>
+</html>
