@@ -18,5 +18,5 @@ Dit project bevat twee pagina's voor het beheren en beoordelen van BPV (Beroeps 
 1. Download of clone dit project naar je lokale machine.
 2. Open de HTML-bestanden in een browser om het project te bekijken en te testen.
 
-## Licentie
-Dit project is beschikbaar onder de MIT-licentie.
+## Auteur
+Dit project is gemaakt voor een BPV Tool voor het aventus, voor vragen/opmerkingen contacteer de maker van het project
